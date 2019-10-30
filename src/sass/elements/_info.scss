@@ -1,0 +1,23 @@
+.info-row {
+    display: flex;
+    // justify-content: center;
+}
+
+.info-btn {
+    @include boxLink;
+}
+
+#what-we-do {
+    // margin: 0 10% 0 10%;
+    background: $body_white;
+    border: 1px solid $border_grey; 
+}
+
+#related-sites {
+    .info-row {
+        flex-wrap: wrap;
+    }
+    button {
+        @include actionBtn;
+    }
+}

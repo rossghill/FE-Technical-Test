@@ -4,8 +4,19 @@
 }
 
 @mixin actionBtn {
-    background: #C3002F;
-    color: #FFFFFF;
+    background: $main_red;
+    color: $body_white;
     width: 254px;
     height: 50px;
+}
+
+@mixin boxLink {
+    background: $body_white;
+    color: $main_blue;
+    width: 25%;
+    height: 100px;
+    border: 1px solid $main_blue;
+    border-bottom: 4px solid $main_blue;
+    margin-left: 1em;
+    margin-left: 1em;
 }

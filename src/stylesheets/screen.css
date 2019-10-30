@@ -111,6 +111,80 @@ nav ul {
   padding-right: 1em;
 }
 
+/* line 1, ../sass/elements/_info.scss */
+.info-row {
+  display: flex;
+}
+
+/* line 6, ../sass/elements/_info.scss */
+.info-btn {
+  background: #FFFFFF;
+  color: #003A60;
+  width: 25%;
+  height: 100px;
+  border: 1px solid #003A60;
+  border-bottom: 4px solid #003A60;
+  margin-left: 1em;
+  margin-left: 1em;
+}
+
+/* line 10, ../sass/elements/_info.scss */
+#what-we-do {
+  background: #FFFFFF;
+  border: 1px solid #D6D6D6;
+}
+
+/* line 17, ../sass/elements/_info.scss */
+#related-sites .info-row {
+  flex-wrap: wrap;
+}
+/* line 20, ../sass/elements/_info.scss */
+#related-sites button {
+  background: #C3002F;
+  color: #FFFFFF;
+  width: 254px;
+  height: 50px;
+}
+
+/* line 1, ../sass/elements/_news.scss */
+.feature-row {
+  display: flex;
+  width: 100%;
+  height: 600px;
+}
+
+/* line 7, ../sass/elements/_news.scss */
+.feature-news, .feature-event {
+  width: 50%;
+}
+
+/* line 11, ../sass/elements/_news.scss */
+.parent {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+/* line 19, ../sass/elements/_news.scss */
+.parent .div1 {
+  grid-area: 1 / 1 / 2 / 4;
+  background: red;
+}
+/* line 20, ../sass/elements/_news.scss */
+.parent .div2 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+/* line 21, ../sass/elements/_news.scss */
+.parent .div3 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+/* line 22, ../sass/elements/_news.scss */
+.parent .div4 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
 /* line 1, ../sass/elements/_subscribe.scss */
 #subscribe {
   margin: 0 25% 0 25%;
@@ -132,24 +206,29 @@ nav ul {
 }
 
 /* line 1, ../sass/elements/_text.scss */
+body {
+  font-family: "ProximaNova-Regular", sans-serif;
+}
+
+/* line 5, ../sass/elements/_text.scss */
 #logo-1, #logo-2 {
   font-size: 42px;
 }
 
-/* line 5, ../sass/elements/_text.scss */
+/* line 9, ../sass/elements/_text.scss */
 #logo-1 {
   font-family: "Helvetica Neue";
   font-weight: bold;
   color: #003A62;
 }
 
-/* line 11, ../sass/elements/_text.scss */
+/* line 15, ../sass/elements/_text.scss */
 #logo-2 {
   font-family: "Consolas", sans-serif;
   color: #E21A23;
 }
 
-/* line 16, ../sass/elements/_text.scss */
+/* line 20, ../sass/elements/_text.scss */
 .sect-heading {
   text-transform: uppercase;
   color: #003A60;
