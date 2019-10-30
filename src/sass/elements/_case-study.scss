@@ -1,0 +1,21 @@
+#case-study {
+    .feature-case-study {
+        .flex-container {
+            display: flex;
+        }
+        img{
+            width: 40%;
+        }
+    }    
+    .secondary-case-study {
+        display: flex;
+        .case {
+            width: 25%;
+        }
+    }
+    button {
+        @include actionBtn;
+    } 
+} 
+
+
