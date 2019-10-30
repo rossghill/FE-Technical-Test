@@ -66,3 +66,66 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../../fonts/Proxima Nova Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../../fonts/Proxima Nova Bold.otf") format("opentype");
+}
+/* line 2, ../sass/elements/_feature.scss */
+img {
+  width: 100%;
+  position: absolute;
+}
+
+/* line 1, ../sass/elements/_header.scss */
+header {
+  z-index: 19999;
+  position: relative;
+  background: #FFFFFF;
+}
+
+/* line 7, ../sass/elements/_header.scss */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  background: #FFFFFF;
+  justify-content: space-between;
+  padding: 1em 15% 1em 15%;
+  border-top: 2px solid #003A60;
+  border-bottom: 2px solid #003A60;
+}
+
+/* line 18, ../sass/elements/_header.scss */
+.logo {
+  width: 100%;
+  text-align: right;
+  padding: 3em 0 1em 0;
+}
+
+/* line 24, ../sass/elements/_header.scss */
+#logo-2 {
+  padding-right: 1em;
+}
+
+/* line 1, ../sass/elements/_text.scss */
+#logo-1, #logo-2 {
+  font-size: 42px;
+}
+
+/* line 5, ../sass/elements/_text.scss */
+#logo-1 {
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  color: #003A62;
+}
+
+/* line 11, ../sass/elements/_text.scss */
+#logo-2 {
+  font-family: "Consolas", sans-serif;
+  color: #E21A23;
+}

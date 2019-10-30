@@ -1,0 +1,26 @@
+header {
+    z-index: 19999;
+    position: relative;
+    background: $body_white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    background: $body_white;
+    justify-content: space-between;
+    padding: 1em 15% 1em 15%;
+    border-top: 2px solid $main_blue;
+    border-bottom: 2px solid $main_blue;
+}
+
+.logo {
+    width: 100%;
+    text-align:right;
+    padding: 3em 0 1em 0;
+}
+
+#logo-2 {
+    padding-right: 1em;
+}

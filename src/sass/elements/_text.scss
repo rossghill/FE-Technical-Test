@@ -1,0 +1,14 @@
+#logo-1, #logo-2 {
+    font-size: $logo;
+}
+
+#logo-1 {
+    font-family: $logo_font;
+    font-weight: bold;
+    color: $logo_blue;
+}
+
+#logo-2 {
+    font-family: $logo_font_2, sans-serif;
+    color: $logo_red;
+}
