@@ -1,0 +1,14 @@
+#subscribe {
+    margin: 0 25% 0 25%;
+}
+
+.email-subscribe {
+    box-shadow: $box-shadow;
+    margin: 0 auto;
+    clear: both;
+    button {
+        @include actionBtn;
+        display: inline-block;
+    }
+}
+

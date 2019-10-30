@@ -2,3 +2,10 @@
     font-family: 'Proxima Nova Bold';
     src: url('../../fonts/Proxima\ Nova\ Bold.otf') format('opentype');
 }
+
+@mixin actionBtn {
+    background: #C3002F;
+    color: #FFFFFF;
+    width: 254px;
+    height: 50px;
+}
