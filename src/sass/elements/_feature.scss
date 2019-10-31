@@ -1,7 +1,18 @@
-// feature {
-    img {
-        width: 100%;
-        // position:absolute;
-        // height: 501px;
+#featured {
+    height: 1031px;
+    position: relative;
+    .info-container, img {
+        position: absolute;
     }
-// }
+    img {
+        top: 200px;
+        left: 833px;
+        width: 680px;
+        height: 650px;
+    }
+    .info-container {
+        width: 538px;
+        top: 266px;
+        left: 407px;
+    }
+}

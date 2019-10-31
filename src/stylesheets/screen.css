@@ -99,8 +99,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 50px;
 }
 
-/* line 2, ../sass/elements/_feature.scss */
-img {
+/* line 1, ../sass/elements/_feature.scss */
+#featured {
+  height: 1031px;
+  position: relative;
+}
+/* line 4, ../sass/elements/_feature.scss */
+#featured .info-container, #featured img {
+  position: absolute;
+}
+/* line 7, ../sass/elements/_feature.scss */
+#featured img {
+  top: 200px;
+  left: 833px;
+  width: 680px;
+  height: 650px;
+}
+/* line 13, ../sass/elements/_feature.scss */
+#featured .info-container {
+  width: 538px;
+  top: 266px;
+  left: 407px;
+}
+
+/* line 2, ../sass/elements/_find.scss */
+#find img {
   width: 100%;
 }
 
