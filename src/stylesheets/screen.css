@@ -212,12 +212,18 @@ footer ul {
 }
 /* line 10, ../sass/elements/_footer.scss */
 footer ul li {
-  padding-bottom: 0.5em;
+  padding-bottom: 0.8em;
 }
 /* line 14, ../sass/elements/_footer.scss */
 footer .link-container {
   display: flex;
   justify-content: flex-start;
+  padding: 3em 0 0 0;
+}
+/* line 19, ../sass/elements/_footer.scss */
+footer .social-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* line 1, ../sass/elements/_header.scss */
@@ -374,8 +380,9 @@ nav ul {
   box-shadow: 0px 3px 10px #D6D6D6;
   margin: 0 auto;
   clear: both;
+  padding: 1em;
 }
-/* line 10, ../sass/elements/_subscribe.scss */
+/* line 11, ../sass/elements/_subscribe.scss */
 .email-subscribe button {
   background: #C3002F;
   color: #FFFFFF;
