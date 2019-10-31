@@ -3,9 +3,10 @@
     position: relative;
     height: 500px;
     width: 100%;
-    background-image: url(../../images/dominik-resek-oH8G8cn52o8-unsplash.png);
+    background-image: url(../../src/images/dominik-resek-oH8G8cn52o8-unsplash.png);
     button {
         @include actionBtn;
+        float: right;
     } 
     .find-box{
         position: absolute;
@@ -14,5 +15,8 @@
         right: 50%;
         top: 465px;
         box-shadow: $box-shadow;
+        div {
+            padding: 1em;
+        }
     }    
 }

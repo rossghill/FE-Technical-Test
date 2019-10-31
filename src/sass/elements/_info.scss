@@ -1,11 +1,17 @@
-.info-row {
-    display: flex;
-    // justify-content: center;
+.info {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    .info-row {
+        display: flex;
+        // justify-content: center;
+    }
+
+    .info-btn {
+        @include boxLink;
+    }
 }
 
-.info-btn {
-    @include boxLink;
-}
+
 
 #what-we-do {
     // margin: 0 10% 0 10%;
@@ -17,11 +23,11 @@
     margin: auto;
     width: 100%;
     .info-row {
-        width: 90%;
         flex-wrap: wrap;
         margin: auto;
     }
     button {
         @include actionBtn;
+        float: right;
     }
 }

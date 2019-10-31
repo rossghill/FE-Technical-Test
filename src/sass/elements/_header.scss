@@ -2,12 +2,16 @@ header {
     z-index: 19999;
     position: relative;
     background: $body_white;
+    .search-text {
+        color: $main_red
+    }
 }
 
 nav ul {
     display: flex;
     flex-direction: row;
-    font-family: 'Proxima Nova Bold', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
+    font-weight: 700;
     background: $body_white;
     justify-content: space-between;
     padding: 1em 15% 1em 15%;
