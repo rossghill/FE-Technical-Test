@@ -1,5 +1,18 @@
 #find {
-    img {
-        width: 100%;
+    display: block;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-image: url(../../images/dominik-resek-oH8G8cn52o8-unsplash.png);
+    button {
+        @include actionBtn;
     } 
+    .find-box{
+        position: absolute;
+        width: 50%;
+        left: 30%;
+        right: 50%;
+        top: 465px;
+        box-shadow: $box-shadow;
+    }    
 }

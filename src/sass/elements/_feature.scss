@@ -1,18 +1,19 @@
 #featured {
     height: 1031px;
     position: relative;
+    width: 100vw;
     .info-container, img {
         position: absolute;
     }
     img {
         top: 200px;
-        left: 833px;
+        left: 633px;
         width: 680px;
         height: 650px;
     }
     .info-container {
         width: 538px;
         top: 266px;
-        left: 407px;
+        left: 207px;
     }
 }
