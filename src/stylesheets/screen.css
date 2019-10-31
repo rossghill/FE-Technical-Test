@@ -71,10 +71,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: 'Proxima Nova Bold';
   src: url("../../fonts/Proxima Nova Bold.otf") format("opentype");
 }
-@font-face {
-  font-family: 'Proxima Nova Bold';
-  src: url("../../fonts/Proxima Nova Bold.otf") format("opentype");
+/* line 1, ../sass/elements/_base.scss */
+p {
+  font-size: 16px;
 }
+
+/* line 5, ../sass/elements/_base.scss */
+.selected, .info-header {
+  background: #003A60 !important;
+  color: #FFFFFF !important;
+}
+
+/* line 10, ../sass/elements/_base.scss */
+.info-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  padding: 1em;
+}
+
+/* line 17, ../sass/elements/_base.scss */
+.sect-heading {
+  font-weight: bold;
+  letter-spacing: 2.2px;
+  color: #003A60;
+  padding: 1em;
+}
+
 /* line 3, ../sass/elements/_case-study.scss */
 #case-study .feature-case-study .flex-container {
   display: flex;
@@ -97,6 +120,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #FFFFFF;
   width: 254px;
   height: 50px;
+  font-size: 22px;
+  font-family: "proxima-nova", sans-serif;
 }
 
 /* line 1, ../sass/elements/_feature.scss */
@@ -137,6 +162,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #FFFFFF;
   width: 254px;
   height: 50px;
+  font-size: 22px;
+  font-family: "proxima-nova", sans-serif;
 }
 /* line 10, ../sass/elements/_find.scss */
 #find .find-box {
@@ -159,6 +186,16 @@ footer {
 footer ul {
   display: flex;
   flex-direction: column;
+  margin: 1em;
+}
+/* line 10, ../sass/elements/_footer.scss */
+footer ul li {
+  padding-bottom: 0.5em;
+}
+/* line 14, ../sass/elements/_footer.scss */
+footer .link-container {
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* line 1, ../sass/elements/_header.scss */
@@ -201,7 +238,7 @@ nav ul {
 .info-btn {
   background: #FFFFFF;
   color: #003A60;
-  width: 25%;
+  width: 32%;
   height: 100px;
   border: 1px solid #003A60;
   border-bottom: 4px solid #003A60;
@@ -215,16 +252,25 @@ nav ul {
   border: 1px solid #D6D6D6;
 }
 
-/* line 17, ../sass/elements/_info.scss */
-#related-sites .info-row {
-  flex-wrap: wrap;
+/* line 16, ../sass/elements/_info.scss */
+#related-sites {
+  margin: auto;
+  width: 100%;
 }
-/* line 20, ../sass/elements/_info.scss */
+/* line 19, ../sass/elements/_info.scss */
+#related-sites .info-row {
+  width: 90%;
+  flex-wrap: wrap;
+  margin: auto;
+}
+/* line 24, ../sass/elements/_info.scss */
 #related-sites button {
   background: #C3002F;
   color: #FFFFFF;
   width: 254px;
   height: 50px;
+  font-size: 22px;
+  font-family: "proxima-nova", sans-serif;
 }
 
 /* line 1, ../sass/elements/_news.scss */
@@ -302,12 +348,14 @@ nav ul {
   color: #FFFFFF;
   width: 254px;
   height: 50px;
+  font-size: 22px;
+  font-family: "proxima-nova", sans-serif;
   display: inline-block;
 }
 
 /* line 1, ../sass/elements/_text.scss */
 body {
-  font-family: "ProximaNova-Regular", sans-serif;
+  font-family: "proxima-nova", sans-serif;
 }
 
 /* line 5, ../sass/elements/_text.scss */

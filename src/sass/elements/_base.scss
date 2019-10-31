@@ -1,0 +1,23 @@
+p {
+    font-size: 16px;
+}
+
+.selected, .info-header {
+    background: $main_blue !important;
+    color: $body_white !important;
+}
+
+.info-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    padding: 1em;
+}
+
+.sect-heading {
+    font-weight: bold;
+    letter-spacing: 2.2px;
+    color: $main-blue;
+    padding: 1em;
+}
+

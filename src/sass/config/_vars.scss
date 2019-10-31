@@ -15,11 +15,13 @@ $dark_grey: #707070;
 
 // Font
 
-$proxima: 'ProximaNova-Regular';
+$proxima: 'proxima-nova';
 $proxima_bold: 'Proxima Nova Bold';
 $logo_font: 'Helvetica Neue';
 $logo_font_2: 'Consolas';
 $font-stack: "Open Sans, Arial, sans-serif";
+
+$bold: 700;
 
 // Font Sizes
 
@@ -31,10 +33,10 @@ $paragraph: 16px;
 $logo: 42px;
 $heading: 22px;
 
-@font-face {
-    font-family: 'Proxima Nova Bold';
-    src: url('../../fonts/Proxima\ Nova\ Bold.otf') format('opentype');
-}
+// @font-face {
+//     font-family: 'Proxima Nova Bold';
+//     src: url('../../fonts/Proxima\ Nova\ Bold.otf') format('opentype');
+// }
 
 // Misc
 $box-shadow: 0px 3px 10px $border_grey;

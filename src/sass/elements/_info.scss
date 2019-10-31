@@ -14,8 +14,12 @@
 }
 
 #related-sites {
+    margin: auto;
+    width: 100%;
     .info-row {
+        width: 90%;
         flex-wrap: wrap;
+        margin: auto;
     }
     button {
         @include actionBtn;
