@@ -1,0 +1,10 @@
+footer {
+    height: 478px;
+    width: 100%;
+    background: $main-blue;
+    color: $body-white;
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
