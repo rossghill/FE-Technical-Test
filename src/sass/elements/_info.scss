@@ -3,7 +3,13 @@
     padding-bottom: 3em;
     .info-row {
         display: flex;
-        // justify-content: center;
+    }
+}
+
+.info-text {
+    padding: 1.4em;
+    p {
+        margin-bottom: 1.5em;
     }
 }
 

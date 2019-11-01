@@ -1,5 +1,11 @@
 #case-study {
     padding: 4em 0 3em 0;
+    .feature-case-study, .secondary-case-study {
+        box-shadow: $box-shadow;
+        button {
+            @include actionBtn;
+        } 
+    }
     .feature-case-study {
         .flex-container {
             display: flex;
@@ -15,12 +21,14 @@
         display: flex;
         .case {
             width: 25%;
+            padding: 1em;
+            font-weight: 700;
+            img {
+                margin-bottom: 1em;
+            }
         }
     }
-    button {
-        @include actionBtn;
-        // float: right;
-    } 
+
 } 
 
 
