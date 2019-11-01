@@ -1,23 +1,38 @@
 footer {
-    height: 478px;
     width: 100%;
     background: $main-blue;
     color: $body-white;
     ul {
         display: flex;
         flex-direction: column;
-        margin: 1em;
+        margin: 1em 5em 1em 1em;
         li {
             padding-bottom: 0.8em;
+        }
+    }
+    .end-sect {
+        display: flex;
+        .copyright {
+            width: 50%;
+            display: flex;
+            span{
+                padding: 1em;
+            }
         }
     }
     .link-container{
         display: flex;
         justify-content: flex-start;
-        padding: 3em 0 0 0;
+        padding: 2.5em 0 2.5em 0;
+        width: 85%;
+        margin:auto;
     }
     .social-container {
         display: flex;
         justify-content: flex-end;
+        width: 50%;
+        i {
+            padding: 1em;
+        }
     }
 }

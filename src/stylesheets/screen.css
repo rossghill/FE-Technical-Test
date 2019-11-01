@@ -127,15 +127,17 @@ p {
   letter-spacing: 2.2px;
   color: #003A60;
   padding: 1em;
+  width: 80%;
+  margin: auto;
 }
 
-/* line 41, ../sass/elements/_base.scss */
+/* line 43, ../sass/elements/_base.scss */
 .category-text {
   color: #C3002F !important;
   text-transform: uppercase;
 }
 
-/* line 46, ../sass/elements/_base.scss */
+/* line 48, ../sass/elements/_base.scss */
 .btn-container {
   display: flex;
   justify-content: flex-end;
@@ -172,7 +174,7 @@ p {
 }
 /* line 19, ../sass/elements/_case-study.scss */
 #case-study .feature-case-study .flex-container div {
-  padding: 1em;
+  padding: 2em;
 }
 /* line 22, ../sass/elements/_case-study.scss */
 #case-study .feature-case-study .flex-container .case-main-img {
@@ -272,8 +274,11 @@ p {
   height: 500px;
   width: 100%;
   background-image: url(../../src/images/dominik-resek-oH8G8cn52o8-unsplash.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-/* line 7, ../sass/elements/_find.scss */
+/* line 10, ../sass/elements/_find.scss */
 #find button {
   background: #C3002F;
   color: #FFFFFF;
@@ -282,7 +287,7 @@ p {
   font-size: 22px;
   font-family: "proxima-nova", sans-serif;
 }
-/* line 10, ../sass/elements/_find.scss */
+/* line 13, ../sass/elements/_find.scss */
 #find .find-box {
   position: relative;
   width: 55%;
@@ -293,7 +298,7 @@ p {
   transform: translate(-50%, -50%);
   min-width: 960px;
 }
-/* line 19, ../sass/elements/_find.scss */
+/* line 22, ../sass/elements/_find.scss */
 #find .find-box div {
   display: flex;
   align-items: center;
@@ -302,38 +307,57 @@ p {
   font-size: 18px;
   background: #FFFFFF;
 }
-/* line 27, ../sass/elements/_find.scss */
+/* line 30, ../sass/elements/_find.scss */
 #find .find-box i {
   padding: 0 15px 0 5px;
 }
 
 /* line 1, ../sass/elements/_footer.scss */
 footer {
-  height: 478px;
   width: 100%;
   background: #003A60;
   color: #FFFFFF;
 }
-/* line 6, ../sass/elements/_footer.scss */
+/* line 5, ../sass/elements/_footer.scss */
 footer ul {
   display: flex;
   flex-direction: column;
-  margin: 1em;
+  margin: 1em 5em 1em 1em;
 }
-/* line 10, ../sass/elements/_footer.scss */
+/* line 9, ../sass/elements/_footer.scss */
 footer ul li {
   padding-bottom: 0.8em;
 }
-/* line 14, ../sass/elements/_footer.scss */
+/* line 13, ../sass/elements/_footer.scss */
+footer .end-sect {
+  display: flex;
+}
+/* line 15, ../sass/elements/_footer.scss */
+footer .end-sect .copyright {
+  width: 50%;
+  display: flex;
+}
+/* line 18, ../sass/elements/_footer.scss */
+footer .end-sect .copyright span {
+  padding: 1em;
+}
+/* line 23, ../sass/elements/_footer.scss */
 footer .link-container {
   display: flex;
   justify-content: flex-start;
-  padding: 3em 0 0 0;
+  padding: 2.5em 0 2.5em 0;
+  width: 85%;
+  margin: auto;
 }
-/* line 19, ../sass/elements/_footer.scss */
+/* line 30, ../sass/elements/_footer.scss */
 footer .social-container {
   display: flex;
   justify-content: flex-end;
+  width: 50%;
+}
+/* line 34, ../sass/elements/_footer.scss */
+footer .social-container i {
+  padding: 1em;
 }
 
 /* line 1, ../sass/elements/_header.scss */
@@ -378,24 +402,25 @@ nav ul {
 
 /* line 1, ../sass/elements/_info.scss */
 .info {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding: 3em 0 3em 0;
 }
-/* line 4, ../sass/elements/_info.scss */
+/* line 3, ../sass/elements/_info.scss */
 .info .info-row {
   display: flex;
+  width: 80%;
+  margin: auto;
 }
 
-/* line 9, ../sass/elements/_info.scss */
+/* line 10, ../sass/elements/_info.scss */
 .info-text {
   padding: 1.4em;
 }
-/* line 11, ../sass/elements/_info.scss */
+/* line 12, ../sass/elements/_info.scss */
 .info-text p {
   margin-bottom: 1.5em;
 }
 
-/* line 16, ../sass/elements/_info.scss */
+/* line 17, ../sass/elements/_info.scss */
 .info-btn {
   background: #FFFFFF;
   color: #003A60;
@@ -409,7 +434,7 @@ nav ul {
   font-size: 18px;
   font-weight: 700;
 }
-/* line 19, ../sass/elements/_info.scss */
+/* line 20, ../sass/elements/_info.scss */
 .info-btn p {
   position: relative;
   top: 45%;
@@ -418,24 +443,24 @@ nav ul {
   justify-content: space-between;
 }
 
-/* line 29, ../sass/elements/_info.scss */
+/* line 30, ../sass/elements/_info.scss */
 #what-we-do {
   background: #FFFFFF;
   border: 1px solid #D6D6D6;
 }
 
-/* line 35, ../sass/elements/_info.scss */
+/* line 36, ../sass/elements/_info.scss */
 #related-sites {
   background: repeating-linear-gradient(300deg, #D6D6D6, #D6D6D6 1px, #FFFFFF 1px, #FFFFFF 5px);
   margin: auto;
   width: 100%;
 }
-/* line 39, ../sass/elements/_info.scss */
+/* line 40, ../sass/elements/_info.scss */
 #related-sites .info-row {
   flex-wrap: wrap;
   margin: auto;
 }
-/* line 43, ../sass/elements/_info.scss */
+/* line 44, ../sass/elements/_info.scss */
 #related-sites button {
   background: #C3002F;
   color: #FFFFFF;
@@ -443,7 +468,6 @@ nav ul {
   height: 50px;
   font-size: 22px;
   font-family: "proxima-nova", sans-serif;
-  float: right;
 }
 
 /* line 1, ../sass/elements/_news.scss */
@@ -518,7 +542,7 @@ nav ul {
 
 /* line 1, ../sass/elements/_subscribe.scss */
 #subscribe {
-  margin: 0 25% 0 25%;
+  margin: 1em 25% 1em 25%;
   padding: 3em 0 3em 0;
 }
 

@@ -4,6 +4,9 @@
     height: 500px;
     width: 100%;
     background-image: url(../../src/images/dominik-resek-oH8G8cn52o8-unsplash.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
     button {
         @include actionBtn;
     } 
