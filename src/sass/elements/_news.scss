@@ -6,6 +6,9 @@
         display: flex;
         width: 90%;
         // height: 600px;
+        .info-text p:first-child {
+            @include boldFont;
+        }
     }
 
     .feature-news, .feature-event {
@@ -41,6 +44,10 @@
                 width: 100%;
                 height: 50%;
             }
+        }
+        p {
+            line-height: 24px;
+            color: $main_blue;
         }
     }
 }

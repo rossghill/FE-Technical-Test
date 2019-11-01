@@ -8,13 +8,14 @@
         @include actionBtn;
     } 
     .find-box{
-        position: absolute;
+        position: relative;
         width: 55%;
-        left: 30%;
-        right: 50%;
-        top: 415px;
+        left: 50%;
+        top: 93%;
         box-shadow: $box-shadow;
         z-index: 76;
+        transform: translate(-50%, -50%);
+        min-width: 960px;
         div {
             display: flex;
             align-items: center;
@@ -22,6 +23,9 @@
             padding: 1.4em;
             font-size: 18px;
             background: $body_white;
+        }
+        i {
+            padding: 0 15px 0 5px;
         }
     }    
 }

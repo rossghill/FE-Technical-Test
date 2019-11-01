@@ -15,7 +15,7 @@
 
 .info-btn {
     @include boxLink;
-    // position: absolute;
+    @include boldFont;
     p {
         position: relative;
         top: 45%;

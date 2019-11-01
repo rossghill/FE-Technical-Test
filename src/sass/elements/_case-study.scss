@@ -3,6 +3,8 @@
     @include stripedBg;
     .feature-case-study, .secondary-case-study {
         box-shadow: $box-shadow;
+        color: $main_blue;
+        line-height: 24px;
         button {
             @include actionBtn;
         } 
@@ -23,10 +25,11 @@
     .secondary-case-study {
         display: flex;
         .case {
+            @include boldFont;
             width: 25%;
             padding: 1em 1.5em 1em 1.5em;
-            font-weight: 700;
             background: white;
+
             img {
                 margin-bottom: 1em;
             }

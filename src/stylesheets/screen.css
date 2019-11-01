@@ -120,7 +120,7 @@ p {
 
 /* line 36, ../sass/elements/_base.scss */
 .category-text {
-  color: #C3002F;
+  color: #C3002F !important;
   text-transform: uppercase;
 }
 
@@ -132,8 +132,10 @@ p {
 /* line 4, ../sass/elements/_case-study.scss */
 #case-study .feature-case-study, #case-study .secondary-case-study {
   box-shadow: 0px 3px 10px #D6D6D6;
+  color: #003A60;
+  line-height: 24px;
 }
-/* line 6, ../sass/elements/_case-study.scss */
+/* line 8, ../sass/elements/_case-study.scss */
 #case-study .feature-case-study button, #case-study .secondary-case-study button {
   background: #C3002F;
   color: #FFFFFF;
@@ -142,35 +144,37 @@ p {
   font-size: 22px;
   font-family: "proxima-nova", sans-serif;
 }
-/* line 10, ../sass/elements/_case-study.scss */
+/* line 12, ../sass/elements/_case-study.scss */
 #case-study .feature-case-study {
   background: #FFFFFF;
 }
-/* line 12, ../sass/elements/_case-study.scss */
+/* line 14, ../sass/elements/_case-study.scss */
 #case-study .feature-case-study .flex-container {
   display: flex;
   padding: 2.5em 1.5em 1.5em 1.5em;
 }
-/* line 15, ../sass/elements/_case-study.scss */
+/* line 17, ../sass/elements/_case-study.scss */
 #case-study .feature-case-study .flex-container div {
   padding: 1em;
 }
-/* line 19, ../sass/elements/_case-study.scss */
+/* line 21, ../sass/elements/_case-study.scss */
 #case-study .feature-case-study img {
   width: 40%;
 }
-/* line 23, ../sass/elements/_case-study.scss */
+/* line 25, ../sass/elements/_case-study.scss */
 #case-study .secondary-case-study {
   display: flex;
 }
-/* line 25, ../sass/elements/_case-study.scss */
+/* line 27, ../sass/elements/_case-study.scss */
 #case-study .secondary-case-study .case {
+  font-family: "proxima-nova";
+  font-size: 18px;
+  font-weight: 700;
   width: 25%;
   padding: 1em 1.5em 1em 1.5em;
-  font-weight: 700;
   background: white;
 }
-/* line 30, ../sass/elements/_case-study.scss */
+/* line 33, ../sass/elements/_case-study.scss */
 #case-study .secondary-case-study .case img {
   margin-bottom: 1em;
 }
@@ -201,6 +205,8 @@ p {
   z-index: 23;
   background: #FFFFFF;
   box-shadow: 0px 3px 10px #D6D6D6;
+  line-height: 24px;
+  color: #003A60;
 }
 
 /* line 1, ../sass/elements/_find.scss */
@@ -222,15 +228,16 @@ p {
 }
 /* line 10, ../sass/elements/_find.scss */
 #find .find-box {
-  position: absolute;
+  position: relative;
   width: 55%;
-  left: 30%;
-  right: 50%;
-  top: 415px;
+  left: 50%;
+  top: 93%;
   box-shadow: 0px 3px 10px #D6D6D6;
   z-index: 76;
+  transform: translate(-50%, -50%);
+  min-width: 960px;
 }
-/* line 18, ../sass/elements/_find.scss */
+/* line 19, ../sass/elements/_find.scss */
 #find .find-box div {
   display: flex;
   align-items: center;
@@ -238,6 +245,10 @@ p {
   padding: 1.4em;
   font-size: 18px;
   background: #FFFFFF;
+}
+/* line 27, ../sass/elements/_find.scss */
+#find .find-box i {
+  padding: 0 15px 0 5px;
 }
 
 /* line 1, ../sass/elements/_footer.scss */
@@ -338,6 +349,9 @@ nav ul {
   border-bottom: 4px solid #003A60;
   margin-left: 1em;
   margin-left: 1em;
+  font-family: "proxima-nova";
+  font-size: 18px;
+  font-weight: 700;
 }
 /* line 19, ../sass/elements/_info.scss */
 .info-btn p {
@@ -385,12 +399,18 @@ nav ul {
   display: flex;
   width: 90%;
 }
-/* line 11, ../sass/elements/_news.scss */
+/* line 9, ../sass/elements/_news.scss */
+#news-events .feature-row .info-text p:first-child {
+  font-family: "proxima-nova";
+  font-size: 18px;
+  font-weight: 700;
+}
+/* line 14, ../sass/elements/_news.scss */
 #news-events .feature-news, #news-events .feature-event {
   width: 50%;
   margin: 0 0.5em 0 0.5em;
 }
-/* line 16, ../sass/elements/_news.scss */
+/* line 19, ../sass/elements/_news.scss */
 #news-events .parent {
   height: 100%;
   display: grid;
@@ -398,40 +418,45 @@ nav ul {
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 1em;
 }
-/* line 23, ../sass/elements/_news.scss */
+/* line 26, ../sass/elements/_news.scss */
 #news-events .parent .div1 {
   grid-area: 1 / 1 / 2 / 4;
   display: flex;
   box-shadow: 0px 3px 10px #D6D6D6;
 }
-/* line 27, ../sass/elements/_news.scss */
+/* line 30, ../sass/elements/_news.scss */
 #news-events .parent .div1 img, #news-events .parent .div1 .info-container {
   width: 50%;
   height: 100%;
 }
-/* line 32, ../sass/elements/_news.scss */
+/* line 35, ../sass/elements/_news.scss */
 #news-events .parent .div2 {
   grid-area: 2 / 1 / 3 / 2;
 }
-/* line 33, ../sass/elements/_news.scss */
+/* line 36, ../sass/elements/_news.scss */
 #news-events .parent .div3 {
   grid-area: 2 / 2 / 3 / 3;
 }
-/* line 34, ../sass/elements/_news.scss */
+/* line 37, ../sass/elements/_news.scss */
 #news-events .parent .div4 {
   grid-area: 2 / 3 / 3 / 4;
 }
-/* line 35, ../sass/elements/_news.scss */
+/* line 38, ../sass/elements/_news.scss */
 #news-events .parent .div2, #news-events .parent .div3, #news-events .parent .div4 {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 3px 10px #D6D6D6;
   margin: 0 0.3em 0 0.3em;
 }
-/* line 40, ../sass/elements/_news.scss */
+/* line 43, ../sass/elements/_news.scss */
 #news-events .parent .div2 img, #news-events .parent .div2 .info-container, #news-events .parent .div3 img, #news-events .parent .div3 .info-container, #news-events .parent .div4 img, #news-events .parent .div4 .info-container {
   width: 100%;
   height: 50%;
+}
+/* line 48, ../sass/elements/_news.scss */
+#news-events .parent p {
+  line-height: 24px;
+  color: #003A60;
 }
 
 /* line 1, ../sass/elements/_subscribe.scss */
