@@ -2,40 +2,66 @@
     padding: 4em 0 3em 0;
     @include stripedBg;
     .feature-case-study, .secondary-case-study {
+        background: $body_white;
         box-shadow: $box-shadow;
         color: $main_blue;
         line-height: 24px;
-        button {
-            @include actionBtn;
-        } 
+        margin: auto;
+        width: 65vw;
     }
-    .feature-case-study {
-        background: $body_white;
+    button {
+        @include actionBtn;
+    } 
+    .feature-case-study {   
         .flex-container {
             display: flex;
             padding: 2.5em 1.5em 1.5em 1.5em;
             div {
                 padding: 1em;
             }
+            .case-main-img{
+                width: 40%;
+            }
+            p {
+                margin-bottom: 1.5em;
+            }
+            .blockquote {
+                text-align: center;
+            }
+            .quote-row {
+                width: 100%;
+                display: flex;
+                img {
+                    height: 35px;
+                }
+                .quotetext {
+                    @include boldFont;
+                    width: 90%;
+                    // margin: auto;
+                }
+            }    
         }
-        img{
-            width: 40%;
-        }
-    }    
+
+    }
     .secondary-case-study {
+        margin-top: 2em;
+    }  
+    .case-row {
         display: flex;
+        width: 65vw;
         .case {
             @include boldFont;
             width: 25%;
             padding: 1em 1.5em 1em 1.5em;
             background: white;
-
             img {
                 margin-bottom: 1em;
             }
         }
     }
-
+    .bg-text {
+        width: 75vw;
+    }
 } 
 
 

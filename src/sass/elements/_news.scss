@@ -4,7 +4,8 @@
 
     .feature-row {
         display: flex;
-        width: 90%;
+        width: 85vw;
+        margin: auto;
         // height: 600px;
         .info-text p:first-child {
             @include boldFont;
