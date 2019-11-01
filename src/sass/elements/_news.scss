@@ -1,12 +1,10 @@
 #news-events {
-    // height: 740px;
     display: block;
 
     .feature-row {
         display: flex;
         width: 85vw;
         margin: auto;
-        // height: 600px;
         .info-text p:first-child {
             @include boldFont;
         }
@@ -32,12 +30,17 @@
         .div4 .image-container {
             background-image: url(../../src/images/annie-spratt-8wUjniBSnpw-unsplash.png);
         }
+        .news-big-image {
+            @include bgImage;
+            background-image: url(../../src/images/liam-macleod-uFKEwCQnXq4-unsplash.png);
+        }
     }
 
     .feature-event {
         .div2, .div3, .div4 {
             .image-container {
                 @include bgImage;
+                position: relative;
             }
         }
         .div2 .image-container {
@@ -48,6 +51,11 @@
         }
         .div4 .image-container {
             background-image: url(../../src/images/terrah-holly-pmhdkgRCbtE-unsplash.png);
+        }
+        .news-big-image {
+            @include bgImage;
+            position: relative;
+            background-image: url(../../src/images/campaign-creators-qCi_MzVODoU-1);
         }
     }
 
@@ -62,7 +70,7 @@
             grid-area: 1 / 1 / 2 / 4; 
             display: flex;
             box-shadow: $box-shadow;
-            img, .info-container {
+            .news-big-image, .info-container {
                 width: 50%;
                 height: 100%;
             }
@@ -85,6 +93,24 @@
         p {
             line-height: 24px;
             color: $main_blue;
+        }
+    }
+
+    .date-block {
+        @include boldFont;
+        width: 87px;
+        height: 80px;
+        background: $main_blue;
+        text-transform: uppercase;
+        position: absolute;
+        right: 0px;
+        p {
+            color: $body_white;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
         }
     }
 }
