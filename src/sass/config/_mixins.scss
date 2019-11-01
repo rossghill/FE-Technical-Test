@@ -22,3 +22,13 @@
     margin-left: 1em;
     margin-left: 1em;
 }
+
+@mixin stripedBg {
+        background: repeating-linear-gradient(
+        300deg,
+        $border_grey,
+        $border_grey 1px,
+        $body_white 1px,
+        $body_white 5px
+    );
+}

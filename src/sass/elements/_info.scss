@@ -33,6 +33,7 @@
 }
 
 #related-sites {
+    @include stripedBg;
     margin: auto;
     width: 100%;
     .info-row {

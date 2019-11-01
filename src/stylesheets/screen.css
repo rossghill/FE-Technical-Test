@@ -127,12 +127,13 @@ p {
 /* line 1, ../sass/elements/_case-study.scss */
 #case-study {
   padding: 4em 0 3em 0;
+  background: repeating-linear-gradient(300deg, #D6D6D6, #D6D6D6 1px, #FFFFFF 1px, #FFFFFF 5px);
 }
-/* line 3, ../sass/elements/_case-study.scss */
+/* line 4, ../sass/elements/_case-study.scss */
 #case-study .feature-case-study, #case-study .secondary-case-study {
   box-shadow: 0px 3px 10px #D6D6D6;
 }
-/* line 5, ../sass/elements/_case-study.scss */
+/* line 6, ../sass/elements/_case-study.scss */
 #case-study .feature-case-study button, #case-study .secondary-case-study button {
   background: #C3002F;
   color: #FFFFFF;
@@ -142,29 +143,34 @@ p {
   font-family: "proxima-nova", sans-serif;
 }
 /* line 10, ../sass/elements/_case-study.scss */
+#case-study .feature-case-study {
+  background: #FFFFFF;
+}
+/* line 12, ../sass/elements/_case-study.scss */
 #case-study .feature-case-study .flex-container {
   display: flex;
   padding: 2.5em 1.5em 1.5em 1.5em;
 }
-/* line 13, ../sass/elements/_case-study.scss */
+/* line 15, ../sass/elements/_case-study.scss */
 #case-study .feature-case-study .flex-container div {
   padding: 1em;
 }
-/* line 17, ../sass/elements/_case-study.scss */
+/* line 19, ../sass/elements/_case-study.scss */
 #case-study .feature-case-study img {
   width: 40%;
 }
-/* line 21, ../sass/elements/_case-study.scss */
+/* line 23, ../sass/elements/_case-study.scss */
 #case-study .secondary-case-study {
   display: flex;
 }
-/* line 23, ../sass/elements/_case-study.scss */
+/* line 25, ../sass/elements/_case-study.scss */
 #case-study .secondary-case-study .case {
   width: 25%;
   padding: 1em 1.5em 1em 1.5em;
   font-weight: 700;
+  background: white;
 }
-/* line 27, ../sass/elements/_case-study.scss */
+/* line 30, ../sass/elements/_case-study.scss */
 #case-study .secondary-case-study .case img {
   margin-bottom: 1em;
 }
@@ -176,18 +182,18 @@ p {
   width: 100vw;
   background: repeating-linear-gradient(300deg, #D6D6D6, #D6D6D6 1px, #FFFFFF 1px, #FFFFFF 5px);
 }
-/* line 12, ../sass/elements/_feature.scss */
+/* line 6, ../sass/elements/_feature.scss */
 #featured .info-container, #featured img {
   position: absolute;
 }
-/* line 15, ../sass/elements/_feature.scss */
+/* line 9, ../sass/elements/_feature.scss */
 #featured img {
   top: 200px;
   left: 856px;
   width: 680px;
   height: 650px;
 }
-/* line 21, ../sass/elements/_feature.scss */
+/* line 15, ../sass/elements/_feature.scss */
 #featured .info-container {
   width: 538px;
   top: 266px;
@@ -220,7 +226,7 @@ p {
   width: 55%;
   left: 30%;
   right: 50%;
-  top: 465px;
+  top: 415px;
   box-shadow: 0px 3px 10px #D6D6D6;
   z-index: 76;
 }
@@ -350,15 +356,16 @@ nav ul {
 
 /* line 35, ../sass/elements/_info.scss */
 #related-sites {
+  background: repeating-linear-gradient(300deg, #D6D6D6, #D6D6D6 1px, #FFFFFF 1px, #FFFFFF 5px);
   margin: auto;
   width: 100%;
 }
-/* line 38, ../sass/elements/_info.scss */
+/* line 39, ../sass/elements/_info.scss */
 #related-sites .info-row {
   flex-wrap: wrap;
   margin: auto;
 }
-/* line 42, ../sass/elements/_info.scss */
+/* line 43, ../sass/elements/_info.scss */
 #related-sites button {
   background: #C3002F;
   color: #FFFFFF;
@@ -371,14 +378,12 @@ nav ul {
 
 /* line 1, ../sass/elements/_news.scss */
 #news-events {
-  height: 740px;
   display: block;
 }
 /* line 5, ../sass/elements/_news.scss */
 #news-events .feature-row {
   display: flex;
   width: 90%;
-  height: 600px;
 }
 /* line 11, ../sass/elements/_news.scss */
 #news-events .feature-news, #news-events .feature-event {

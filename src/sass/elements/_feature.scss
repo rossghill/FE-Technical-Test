@@ -2,13 +2,7 @@
     height: 1031px;
     position: relative;
     width: 100vw;
-    background: repeating-linear-gradient(
-        300deg,
-        $border_grey,
-        $border_grey 1px,
-        $body_white 1px,
-        $body_white 5px
-    );
+    @include stripedBg;
     .info-container, img {
         position: absolute;
     }
