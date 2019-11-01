@@ -14,6 +14,18 @@ p {
     padding: 1em;
 }
 
+.info-btn {
+    @include boxLink;
+    // position: absolute;
+    p {
+        position: relative;
+        top: 45%;
+        padding: 0 5% 0 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .sect-heading {
     font-weight: bold;
     letter-spacing: 2.2px;

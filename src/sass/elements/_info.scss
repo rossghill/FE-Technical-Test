@@ -5,12 +5,19 @@
         display: flex;
         // justify-content: center;
     }
-
-    .info-btn {
-        @include boxLink;
-    }
 }
 
+.info-btn {
+    @include boxLink;
+    // position: absolute;
+    p {
+        position: relative;
+        top: 45%;
+        padding: 0 5% 0 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
 
 #what-we-do {

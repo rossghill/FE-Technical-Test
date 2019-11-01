@@ -6,17 +6,20 @@
     background-image: url(../../src/images/dominik-resek-oH8G8cn52o8-unsplash.png);
     button {
         @include actionBtn;
-        float: right;
     } 
     .find-box{
         position: absolute;
-        width: 50%;
+        width: 55%;
         left: 30%;
         right: 50%;
         top: 465px;
         box-shadow: $box-shadow;
         div {
-            padding: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.4em;
+            font-size: 18px;
         }
     }    
 }

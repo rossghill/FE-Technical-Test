@@ -3,7 +3,10 @@ header {
     position: relative;
     background: $body_white;
     .search-text {
-        color: $main_red
+        color: $main_red;
+        i {
+            padding-left: 0.8em;
+        }
     }
 }
 
