@@ -16,6 +16,12 @@
     opacity: 0.1;
 }
 
+@mixin bgImage {
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
 @mixin actionBtn {
     background: $main_red;
     color: $body_white;
