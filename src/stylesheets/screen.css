@@ -77,12 +77,26 @@ p {
 }
 
 /* line 5, ../sass/elements/_base.scss */
+.bg-text {
+  font-family: "proxima-nova";
+  font-size: 18px;
+  font-weight: 700;
+  font-size: 200px;
+  color: #4E778C;
+  position: relative;
+  opacity: 0.1;
+  width: 50%;
+  left: 40%;
+  top: 7%;
+}
+
+/* line 13, ../sass/elements/_base.scss */
 .selected, .info-header {
   background: #003A60 !important;
   color: #FFFFFF !important;
 }
 
-/* line 10, ../sass/elements/_base.scss */
+/* line 18, ../sass/elements/_base.scss */
 .info-header {
   text-transform: uppercase;
   font-weight: bold;
@@ -90,7 +104,7 @@ p {
   padding: 1em;
 }
 
-/* line 17, ../sass/elements/_base.scss */
+/* line 25, ../sass/elements/_base.scss */
 .info-btn {
   background: #FFFFFF;
   color: #003A60;
@@ -101,7 +115,7 @@ p {
   margin-left: 1em;
   margin-left: 1em;
 }
-/* line 20, ../sass/elements/_base.scss */
+/* line 28, ../sass/elements/_base.scss */
 .info-btn p {
   position: relative;
   top: 45%;
@@ -110,7 +124,7 @@ p {
   justify-content: space-between;
 }
 
-/* line 29, ../sass/elements/_base.scss */
+/* line 37, ../sass/elements/_base.scss */
 .sect-heading {
   font-weight: bold;
   letter-spacing: 2.2px;
@@ -118,7 +132,7 @@ p {
   padding: 1em;
 }
 
-/* line 36, ../sass/elements/_base.scss */
+/* line 44, ../sass/elements/_base.scss */
 .category-text {
   color: #C3002F !important;
   text-transform: uppercase;

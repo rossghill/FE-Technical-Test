@@ -9,6 +9,13 @@
     font-weight: 700;
 }
 
+@mixin bgText {
+    font-size: 200px;
+    color: $heading_teal;
+    position: relative;
+    opacity: 0.1;
+}
+
 @mixin actionBtn {
     background: $main_red;
     color: $body_white;
