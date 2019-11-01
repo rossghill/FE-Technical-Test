@@ -9,6 +9,7 @@
     .feature-case-study {
         .flex-container {
             display: flex;
+            padding: 2.5em 1.5em 1.5em 1.5em;
             div {
                 padding: 1em;
             }
@@ -21,7 +22,7 @@
         display: flex;
         .case {
             width: 25%;
-            padding: 1em;
+            padding: 1em 1.5em 1em 1.5em;
             font-weight: 700;
             img {
                 margin-bottom: 1em;

@@ -2,19 +2,26 @@
     height: 1031px;
     position: relative;
     width: 100vw;
+    background: repeating-linear-gradient(
+        300deg,
+        $border_grey,
+        $border_grey 1px,
+        $body_white 1px,
+        $body_white 5px
+    );
     .info-container, img {
         position: absolute;
     }
     img {
         top: 200px;
-        left: 633px;
+        left: 856px;
         width: 680px;
         height: 650px;
     }
     .info-container {
         width: 538px;
         top: 266px;
-        left: 207px;
+        left: 414px;
         z-index: 23;
         background: $body_white;
         box-shadow: $box-shadow;

@@ -14,12 +14,14 @@
         right: 50%;
         top: 465px;
         box-shadow: $box-shadow;
+        z-index: 76;
         div {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 1.4em;
             font-size: 18px;
+            background: $body_white;
         }
     }    
 }
