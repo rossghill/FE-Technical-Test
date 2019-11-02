@@ -32,3 +32,32 @@
         }
     }    
 }
+
+@media (max-width: 1060px){
+    #find {
+        .find-box{
+            transform: none;
+            // position: static;
+            left: auto;
+            top: 30%;
+            position: relative;
+            min-width: 90vw;
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 820px){
+    #find {
+        .find-box{
+            div {
+                flex-direction: column;
+            }
+            .selector {
+                display: inline-block;
+                width: 100%;
+                border-bottom: 1px solid $main_blue;
+            }
+        }
+    }
+}
