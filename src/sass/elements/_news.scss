@@ -14,20 +14,6 @@
             @include boldFont;
             min-height: 71.5px;
         }
-        @media (max-width: 1042px) {
-            display: block;
-            .parent {
-                display: flex;
-                flex-direction:column;
-                width: 100%;
-                div {
-                    width: 100%;
-                }
-            }
-            .feature-news, .feature-event {
-                width: 100%;
-            }
-        }
     }
 
     .feature-news, .feature-event {
@@ -42,17 +28,17 @@
             }
         }
         .div2 .image-container {
-            background-image: url(../../src/images/derek-thomson-cVI7rv4MPpc-unsplash.png);
+            background-image: url(../../src/images/derek-thomson-cVI7rv4MPpc-unsplash@2x.png);
         }
         .div3 .image-container {
-            background-image: url(../../src/images/abbie-bernet-asD2bt0YLS0-unsplash.png);
+            background-image: url(../../src/images/abbie-bernet-asD2bt0YLS0-unsplash@2x.png);
         }
         .div4 .image-container {
-            background-image: url(../../src/images/annie-spratt-8wUjniBSnpw-unsplash.png);
+            background-image: url(../../src/images/annie-spratt-8wUjniBSnpw-unsplash@2x.png);
         }
         .news-big-image {
             @include bgImage;
-            background-image: url(../../src/images/liam-macleod-uFKEwCQnXq4-unsplash.png);
+            background-image: url(../../src/images/liam-macleod-uFKEwCQnXq4-unsplash@2x.png);
         }
     }
 
@@ -64,18 +50,18 @@
             }
         }
         .div2 .image-container {
-            background-image: url(../../src/images/ernest-porzi-Tp2J80pYh-8-unsplash.png);
+            background-image: url(../../src/images/ernest-porzi-Tp2J80pYh-8-unsplash@2x.png);
         }
         .div3 .image-container {
-            background-image: url(../../src/images/jesse-vermeulen-Mxvew_CaxJI-unsplash.png);
+            background-image: url(../../src/images/jesse-vermeulen-Mxvew_CaxJI-unsplash@2x.png);
         }
         .div4 .image-container {
-            background-image: url(../../src/images/terrah-holly-pmhdkgRCbtE-unsplash.png);
+            background-image: url(../../src/images/terrah-holly-pmhdkgRCbtE-unsplash@2x.png);
         }
         .news-big-image {
             @include bgImage;
             position: relative;
-            background-image: url(../../src/images/campaign-creators-qCi_MzVODoU-1.png);
+            background-image: url(../../src/images/campaign-creators-qCi_MzVODoU-2.png);
         }
     }
 
@@ -133,6 +119,54 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
+        }
+    }
+}
+
+// Mobile styles
+#news-events {
+    @media (max-width: 1042px) {
+        .feature-row {
+            display: block;
+            .parent {
+                display: flex;
+                flex-direction:column;
+                width: 100%;
+                div {
+                    width: 100%;
+                }
+                .info-text {
+                    min-height: 200px;
+                    p {
+                        margin-bottom: 10px;
+                        min-height: 20px;
+                    }
+                }
+                .div1 {
+                    display: flex;
+                    flex-direction: column;
+                    .news-big-image, .info-container {
+                        width: 100%;
+                        .info-text {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+            .feature-news, .feature-event {
+                width: 100%;
+            }
+            .feature-event {
+                margin: 1em 0 2em 0;
+                .date-block {
+                    width: 87px;
+                }
+                .news-big-image {
+                    .date-block {
+                        bottom: 0px;
+                    }
+                }
+            }
         }
     }
 }
