@@ -126,6 +126,7 @@
 // Mobile styles
 #news-events {
     @media (max-width: 1042px) {
+        .bg-text { width: 70%};
         .feature-row {
             display: block;
             .parent {
