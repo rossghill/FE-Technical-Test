@@ -1,5 +1,5 @@
 #case-study {
-    padding: 4em 0 3em 0;
+    padding: 0 0 3em 0;
     @include stripedBg;
     .feature-case-study, .secondary-case-study {
         background: $body_white;
@@ -17,10 +17,11 @@
             display: flex;
             padding: 2.5em 1.5em 1.5em 1.5em;
             div {
-                padding: 2em;
+                padding: 0 2em 2em 2em;
             }
             .case-main-img{
                 width: 40%;
+                height:40%;
             }
             p {
                 margin-bottom: 1.5em;
@@ -37,7 +38,7 @@
                 .quotetext {
                     @include boldFont;
                     width: 90%;
-                    // margin: auto;
+                    margin-bottom: 0;
                 }
             }    
         }
@@ -52,7 +53,7 @@
         .case {
             @include boldFont;
             width: 25%;
-            padding: 1em 1.5em 1em 1.5em;
+            padding: 1em 1em 1em 1em;
             background: white;
             img {
                 margin-bottom: 1em;
@@ -60,7 +61,10 @@
         }
     }
     .bg-text {
-        width: 75vw;
+        font-size: 170px;
+        width: 50%;
+        top: 60px;
+        left: 20%;
     }
 } 
 

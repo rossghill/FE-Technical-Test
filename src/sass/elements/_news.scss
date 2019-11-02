@@ -1,18 +1,38 @@
 #news-events {
     display: block;
-
+    .bg-text {
+        font-size:130px;
+        left: 7%;
+        top: 40px;
+        width: 50%;
+    }
     .feature-row {
         display: flex;
         width: 85vw;
         margin: auto;
         .info-text p:first-child {
             @include boldFont;
+            min-height: 71.5px;
+        }
+        @media (max-width: 1042px) {
+            display: block;
+            .parent {
+                display: flex;
+                flex-direction:column;
+                width: 100%;
+                div {
+                    width: 100%;
+                }
+            }
+            .feature-news, .feature-event {
+                width: 100%;
+            }
         }
     }
 
     .feature-news, .feature-event {
         width: 50%;
-        margin: 0 0.5em 0 0.5em;
+        margin: 0 1em 0 0;
     }
 
     .feature-news {
@@ -55,7 +75,7 @@
         .news-big-image {
             @include bgImage;
             position: relative;
-            background-image: url(../../src/images/campaign-creators-qCi_MzVODoU-1);
+            background-image: url(../../src/images/campaign-creators-qCi_MzVODoU-1.png);
         }
     }
 
@@ -64,12 +84,13 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        // grid-column-gap: 0.5em;
+        grid-column-gap: 1em;
         grid-row-gap: 1em;
         .div1 { 
             grid-area: 1 / 1 / 2 / 4; 
             display: flex;
             box-shadow: $box-shadow;
+            margin-bottom: 1.5em;
             .news-big-image, .info-container {
                 width: 50%;
                 height: 100%;
@@ -95,6 +116,7 @@
             color: $main_blue;
         }
     }
+
 
     .date-block {
         @include boldFont;

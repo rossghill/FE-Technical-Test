@@ -8,14 +8,14 @@
     }
     img {
         top: 200px;
-        left: 856px;
+        left: 40vw;
         width: 680px;
         height: 650px;
     }
     .info-container {
         width: 538px;
         top: 266px;
-        left: 414px;
+        left: 20vw;
         z-index: 23;
         background: $body_white;
         box-shadow: $box-shadow;
@@ -23,6 +23,7 @@
         color: $main_blue;
     }
     .bg-text {
+        font-size: 200px;
         width:50%;
         left:40%;
         top:7%;
