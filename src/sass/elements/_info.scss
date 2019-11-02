@@ -95,6 +95,12 @@
             div {
                 margin-bottom: 1em;
             }
+            .info-btn {
+                margin-left: 0;
+            }
         }
     }
+}
+@media (max-width:820px) {
+    #related-sites .btn-container {padding: 0.5em 0 0 0;}
 }

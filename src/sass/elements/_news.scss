@@ -137,10 +137,11 @@
                 flex-direction:column;
                 width: 100%;
                 div {
-                    width: 100%;
+                    width: 85vw;
                 }
                 .info-text {
                     min-height: 200px;
+                    padding: 0.5em;
                     p {
                         margin-bottom: 10px;
                         min-height: 20px;
