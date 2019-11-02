@@ -314,6 +314,7 @@ p {
   /* line 107, ../sass/elements/_case-study.scss */
   #case-study .secondary-case-study .parent .div1, #case-study .secondary-case-study .parent .div2, #case-study .secondary-case-study .parent .div3, #case-study .secondary-case-study .parent .div4 {
     grid-area: auto / auto / auto / auto;
+    text-align: center;
   }
 }
 /* line 1, ../sass/elements/_feature.scss */

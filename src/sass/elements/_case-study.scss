@@ -106,6 +106,7 @@
                 grid-row-gap: 0px;
                 .div1, .div2, .div3, .div4 {
                     grid-area: auto / auto / auto / auto;
+                    text-align:center;
                 }
             }
         }
