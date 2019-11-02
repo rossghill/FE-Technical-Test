@@ -49,6 +49,9 @@
         .parent {
             display:flex;
             flex-direction: column;
+            .info-btn {
+                margin-left: 0;
+            }
             div {
                 margin-bottom: 1em;
             }
