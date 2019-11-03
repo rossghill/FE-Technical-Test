@@ -6,7 +6,7 @@
 @mixin boldFont {
     font-family: $proxima;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: $bold;
 }
 
 @mixin bgText {
@@ -49,4 +49,15 @@
         $body_white 1px,
         $body_white 5px
     );
+}
+
+@mixin sectHeading {
+    text-transform: uppercase;
+    color: $main_blue;
+    font-size: $heading;
+    font-weight: bold;
+    letter-spacing: 2.2px;
+    padding: 1em;
+    width: 80%;
+    margin: auto;
 }

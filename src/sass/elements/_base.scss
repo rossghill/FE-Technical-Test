@@ -7,9 +7,7 @@ p {
 }
 
 .sect-heading {
-    text-transform: uppercase;
-    color: $main_blue;
-    font-size: $heading;
+    @include sectHeading;
 }
 
 .bg-text {
@@ -31,7 +29,6 @@ p {
 
 .info-btn {
     @include boxLink;
-    // position: absolute;
     p {
         position: relative;
         top: 45%;
@@ -39,15 +36,6 @@ p {
         display: flex;
         justify-content: space-between;
     }
-}
-
-.sect-heading {
-    font-weight: bold;
-    letter-spacing: 2.2px;
-    color: $main-blue;
-    padding: 1em;
-    width: 80%;
-    margin: auto;
 }
 
 .category-text {
