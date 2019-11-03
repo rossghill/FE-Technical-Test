@@ -2,12 +2,19 @@ footer {
     width: 100%;
     background: $main-blue;
     color: $body-white;
-    ul {
+    .link-container {
         display: flex;
-        flex-direction: column;
-        margin: 1em 5em 1em 1em;
-        li {
-            padding-bottom: 0.8em;
+        justify-content: flex-start;
+        padding: 2.5em 0 2.5em 0;
+        width: 85%;
+        margin:auto;
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin: 1em 5em 1em 1em;
+            li {
+                padding-bottom: 0.8em;
+            }
         }
     }
     .end-sect {
@@ -19,20 +26,13 @@ footer {
                 padding: 1em;
             }
         }
-    }
-    .link-container{
-        display: flex;
-        justify-content: flex-start;
-        padding: 2.5em 0 2.5em 0;
-        width: 85%;
-        margin:auto;
-    }
-    .social-container {
-        display: flex;
-        justify-content: flex-end;
-        width: 50%;
-        i {
-            padding: 1em;
+        .social-container {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+            i {
+                padding: 1em;
+            }
         }
     }
 }

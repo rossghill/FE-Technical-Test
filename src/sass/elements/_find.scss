@@ -7,9 +7,6 @@
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    button {
-        @include actionBtn;
-    } 
     .find-box{
         position: relative;
         width: 65vw;
@@ -26,11 +23,6 @@
             padding: 1.4em;
             font-size: 18px;
             background: $body_white;
-            .selector {
-                display: inline-block;
-                width: 100%;
-                border-bottom: 1px solid $main_blue;
-            }
             span {
                 display: inline-block;
             }
@@ -50,6 +42,9 @@
                     width: 5%;
                 }
             }
+            button {
+                @include actionBtn;
+            } 
         }
         i {
             padding: 0 15px 0 5px;
@@ -57,11 +52,12 @@
     }    
 }
 
+// Mobile styles
+
 @media (max-width: 1060px){
     #find {
         .find-box{
             transform: none;
-            // position: static;
             left: auto;
             top: 30%;
             position: relative;
@@ -81,8 +77,8 @@
                 width: 70% !important;
                 button {
                     margin: auto;
+                }
             }
         }
     }
-}
 }
