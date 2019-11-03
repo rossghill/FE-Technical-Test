@@ -3,14 +3,14 @@
     position: relative;
     width: 100vw;
     @include stripedBg;
+    .bg-text {
+        font-size: 200px;
+        width:50%;
+        left:40vw;
+        top:7%;
+    }
     .info-container, img {
         position: absolute;
-    }
-    img {
-        top: 200px;
-        left: 40vw;
-        width: 680px;
-        height: 650px;
     }
     .info-container {
         width: 538px;
@@ -22,29 +22,26 @@
         line-height: 24px;
         color: $main_blue;
     }
-    .bg-text {
-        font-size: 200px;
-        width:50%;
-        left:40vw;
-        top:7%;
+    img {
+        top: 200px;
+        left: 40vw;
+        width: 680px;
+        height: 650px;
     }
 }
 
+// Mobile styles
 
 @media (max-width: 1300px){
     #featured {
-        .info-container {left: 10vw; }
-        img {left: 30vw;}
-        .bg-text {left: 30vw;}
+        .info-container { left: 10vw; }
+        img { left: 30vw;}
+        .bg-text { left: 30vw;}
     }
 }
 
 @media (max-width: 1060px){
     #featured {
-        .info-container, img {
-            position: initial;
-            width: 50%;
-        }
         .bg-text {
             left: 10vw;
             top: 2%;
@@ -56,6 +53,10 @@
             margin: auto;
             align-items:center;
         }
+        .info-container, img {
+            position: initial;
+            width: 50%;
+        }
     }
 }
 
@@ -63,7 +64,7 @@
     #featured {
         height: auto;
         position: static;
-        .bg-text { display:none;}
+        .bg-text { display:none; }
         .info-group {
             flex-direction: column-reverse;
             padding: 2em 0 2em 0;

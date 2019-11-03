@@ -1,3 +1,5 @@
+// Styles for text boxes
+
 .info {
     padding: 3em 0 3em 0;
     .info-row {
@@ -26,6 +28,7 @@
     }
 }
 
+// What we do section
 
 #what-we-do {
     background: $body_white;
@@ -58,6 +61,8 @@
         }
     }
 }
+
+// Related sites section
 
 #related-sites {
     @include stripedBg;
@@ -102,8 +107,6 @@
                 margin-left: 0;
             }
         }
+        .btn-container {padding: 2em 1em 0 0;}
     }
-}
-@media (max-width:820px) {
-    #related-sites .btn-container {padding: 0.5em 0 0 0;}
 }
