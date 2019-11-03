@@ -14,80 +14,11 @@
             @include boldFont;
             min-height: 71.5px;
         }
-    }
-
+    }    
     .feature-news, .feature-event {
         width: 50%;
         margin: 0 1em 0 0;
-    }
-
-    .feature-news {
-        .div2, .div3, .div4 {
-            .image-container {
-                @include bgImage;
-            }
-        }
-        .div2 .image-container {
-            background-image: url(../../src/images/derek-thomson-cVI7rv4MPpc-unsplash@2x.png);
-        }
-        .div3 .image-container {
-            background-image: url(../../src/images/abbie-bernet-asD2bt0YLS0-unsplash@2x.png);
-        }
-        .div4 .image-container {
-            background-image: url(../../src/images/annie-spratt-8wUjniBSnpw-unsplash@2x.png);
-        }
-        .news-big-image {
-            @include bgImage;
-            background-image: url(../../src/images/liam-macleod-uFKEwCQnXq4-unsplash@2x.png);
-        }
-    }
-
-    .feature-event {
-        .div2, .div3, .div4 {
-            .image-container {
-                @include bgImage;
-                position: relative;
-            }
-        }
-        .div2 .image-container {
-            background-image: url(../../src/images/ernest-porzi-Tp2J80pYh-8-unsplash@2x.png);
-        }
-        .div3 .image-container {
-            background-image: url(../../src/images/jesse-vermeulen-Mxvew_CaxJI-unsplash@2x.png);
-        }
-        .div4 .image-container {
-            background-image: url(../../src/images/terrah-holly-pmhdkgRCbtE-unsplash@2x.png);
-        }
-        .news-big-image {
-            @include bgImage;
-            position: relative;
-            background-image: url(../../src/images/campaign-creators-qCi_MzVODoU-2.png);
-        }
-    }
-
-    .parent {
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 1em;
-        grid-row-gap: 1em;
-        .div1 { 
-            grid-area: 1 / 1 / 2 / 4; 
-            display: flex;
-            box-shadow: $box-shadow;
-            margin-bottom: 1.5em;
-            .news-big-image, .info-container {
-                width: 50%;
-                height: 100%;
-            }
-        }
-        .div2 { 
-            grid-area: 2 / 1 / 3 / 2;
-        }
-        .div3 { grid-area: 2 / 2 / 3 / 3; }
-        .div4 { grid-area: 2 / 3 / 3 / 4; }
-        .div2, .div3, .div4 {
+        .grid-item-2, .grid-item-3, .grid-item-4 {
             display: flex;
             flex-direction: column;
             box-shadow: $box-shadow;
@@ -96,34 +27,99 @@
                 width: 100%;
                 height: 50%;
             }
+            .image-container {
+                @include bgImage;
+            }
         }
-        p {
-            line-height: 24px;
-            color: $main_blue;
+        .grid-section {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            .grid-item-1 { 
+                grid-area: 1 / 1 / 2 / 4; 
+                display: flex;
+                box-shadow: $box-shadow;
+                margin-bottom: 1.5em;
+                .news-big-image, .info-container {
+                    width: 50%;
+                    height: 100%;
+                }
+            }
+            .grid-item-2 { grid-area: 2 / 1 / 3 / 2;}
+            .grid-item-3 { grid-area: 2 / 2 / 3 / 3; }
+            .grid-item-4 { grid-area: 2 / 3 / 3 / 4; }
+            p {
+                line-height: 24px;
+                color: $main_blue;
+            }
         }
     }
 
+// News section specific styling
 
-    .date-block {
-        @include boldFont;
-        width: 87px;
-        height: 80px;
-        background: $main_blue;
-        text-transform: uppercase;
-        position: absolute;
-        right: 0px;
-        p {
-            color: $body_white;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
+    .feature-news {
+        .grid-item-2 .image-container {
+            background-image: url(../../src/images/derek-thomson-cVI7rv4MPpc-unsplash@2x.png);
+        }
+        .grid-item-3 .image-container {
+            background-image: url(../../src/images/abbie-bernet-asD2bt0YLS0-unsplash@2x.png);
+        }
+        .grid-item-4 .image-container {
+            background-image: url(../../src/images/annie-spratt-8wUjniBSnpw-unsplash@2x.png);
+        }
+        .news-big-image {
+            @include bgImage;
+            background-image: url(../../src/images/liam-macleod-uFKEwCQnXq4-unsplash@2x.png);
+        }
+    }
+
+// Event section specific styling   
+
+    .feature-event {
+        .grid-item-2, .grid-item-3, .grid-item-4 {
+            .image-container {
+                position: relative;
+            }
+        }
+        .grid-item-2 .image-container {
+            background-image: url(../../src/images/ernest-porzi-Tp2J80pYh-8-unsplash@2x.png);
+        }
+        .grid-item-3 .image-container {
+            background-image: url(../../src/images/jesse-vermeulen-Mxvew_CaxJI-unsplash@2x.png);
+        }
+        .grid-item-4 .image-container {
+            background-image: url(../../src/images/terrah-holly-pmhdkgRCbtE-unsplash@2x.png);
+        }
+        .news-big-image {
+            @include bgImage;
+            position: relative;
+            background-image: url(../../src/images/campaign-creators-qCi_MzVODoU-2.png);
+        }
+        .date-block {
+            @include boldFont;
+            width: 87px;
+            height: 80px;
+            background: $main_blue;
+            text-transform: uppercase;
+            position: absolute;
+            right: 0px;
+            p {
+                color: $body_white;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
         }
     }
 }
 
 // Mobile styles
+
 #news-events {
     @media (max-width: 1042px) {
         .bg-text { 
@@ -132,7 +128,10 @@
         }
         .feature-row {
             display: block;
-            .parent {
+            .feature-news, .feature-event {
+                width: 100%;
+            }
+            .grid-section {
                 display: flex;
                 flex-direction:column;
                 width: 100%;
@@ -147,7 +146,7 @@
                         min-height: 20px;
                     }
                 }
-                .div1 {
+                .grid-item-1 {
                     display: flex;
                     flex-direction: column;
                     .news-big-image, .info-container {
@@ -157,9 +156,6 @@
                         }
                     }
                 }
-            }
-            .feature-news, .feature-event {
-                width: 100%;
             }
             .feature-event {
                 margin: 1em 0 2em 0;
