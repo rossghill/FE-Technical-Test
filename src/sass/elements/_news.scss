@@ -32,6 +32,10 @@
             .image-container {
                 @include bgImage;
             }
+            .info-text {
+                padding: 0.8em;
+                font-size: 16px;
+            }
         }
         .grid-section {
             height: 100%;
