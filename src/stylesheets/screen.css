@@ -600,7 +600,7 @@ header .logo #logo-2 {
   padding-right: 1em;
 }
 /* line 24, ../sass/elements/_header.scss */
-header nav i {
+header nav .fa-bars {
   display: none !important;
 }
 /* line 27, ../sass/elements/_header.scss */
@@ -649,7 +649,7 @@ header nav ul .search-text i {
     padding: 0.5em;
   }
   /* line 67, ../sass/elements/_header.scss */
-  header nav i {
+  header nav .fa-bars {
     display: block !important;
     text-align: center;
     font-size: 24px;

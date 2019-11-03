@@ -21,7 +21,7 @@ header {
         }
     }
     nav {
-        i {
+        .fa-bars {
             display: none !important;
         }
         ul {
@@ -64,7 +64,7 @@ header {
                     padding: 0.5em;
                 }
             }
-            i {
+            .fa-bars {
                 display: block !important;
                 text-align: center;
                 font-size: 24px;
