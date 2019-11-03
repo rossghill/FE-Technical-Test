@@ -20,6 +20,7 @@
         width: 50%;
         margin: 0 1em 0 0;
         .grid-item-2, .grid-item-3, .grid-item-4 {
+            max-height:60vh;
             display: flex;
             flex-direction: column;
             box-shadow: $box-shadow;
@@ -141,7 +142,7 @@
                 }
                 .info-text {
                     min-height: 200px;
-                    padding: 0.5em;
+                    padding: 1em;
                     p {
                         margin-bottom: 10px;
                         min-height: 20px;
