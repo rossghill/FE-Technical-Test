@@ -35,6 +35,17 @@ header {
             padding: 1em 15% 1em 15%;
             border-top: 2px solid $main_blue;
             border-bottom: 2px solid $main_blue;
+            li:hover {
+                cursor: pointer;
+                color: $main_red;
+            }
+            a {
+                color: $main_blue;
+                text-decoration: none;
+                &:hover {
+                    color: $main_red;
+                }
+            }
             .search-text {
                 color: $main_red;
                 i {
